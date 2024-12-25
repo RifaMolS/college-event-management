@@ -1,0 +1,76 @@
+" style="display: block !important; float: right; margin-top: 20px;"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration - Coordinator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <section id="register-event" class="register-event">
+        <h2>Register a New Event</h2>
+        <form action="submit_event.php" method="post">
+            
+            <!-- Event Name -->
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" name="event-name" placeholder="Enter event name" required>
+            
+            <!-- Event Description -->
+            <label for="event-description">Event Description:</label>
+            <textarea id="event-description" name="event-description" rows="4" placeholder="Describe the event" required></textarea>
+            
+            <!-- Event Date -->
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" name="event-date" required>
+            
+            <!-- Event Time -->
+            <label for="event-time">Event Time:</label>
+            <input type="time" id="event-time" name="event-time" required>
+            
+            <!-- Event Venue -->
+            <label for="event-venue">Event Venue:</label>
+            <input type="text" id="event-venue" name="event-venue" placeholder="Enter event venue" required>
+            
+            <!-- Event Type -->
+            <label for="event-type">Event Type:</label>
+            <select id="event-type" name="event-type" required>
+                <option value="">--Select Event Type--</option>
+                <option value="cultural">Cultural</option>
+                <option value="technical">Technical</option>
+                <option value="sports">Sports</option>
+                <option value="workshop">Workshop</option>
+                <option value="seminar">Seminar</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <!-- Expected Audience Size -->
+            <label for="audience-size">Expected Audience Size:</label>
+            <input type="number" id="audience-size" name="audience-size" min="1" placeholder="Enter expected number of attendees" required>
+            
+            <!-- Coordinator Name -->
+            <label for="coordinator-name">Coordinator Name:</label>
+            <input type="text" id="coordinator-name" name="coordinator-name" placeholder="Enter your name" required>
+            
+            <!-- Coordinator Email -->
+            <label for="coordinator-email">Coordinator Email:</label>
+            <input type="email" id="coordinator-email" name="coordinator-email" placeholder="Enter your email" required>
+            
+            <!-- Coordinator Contact Number -->
+            <label for="coordinator-phone">Coordinator Phone Number:</label>
+            <input type="tel" id="coordinator-phone" name="coordinator-phone" placeholder="Enter your phone number" required>
+
+            <!-- Additional Notes -->
+            <label for="additional-notes">Additional Notes (Optional):</label>
+            <textarea id="additional-notes" name="additional-notes" rows="4" placeholder="Any other information"></textarea>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit Event</button>
+        </form>
+    </section>
+</body>
+</html>
